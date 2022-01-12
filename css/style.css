@@ -1,0 +1,440 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto:ital,wght@1,100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto:ital,wght@1,100&family=Sofia&family=Unica+One&display=swap');
+header , nav
+{
+    display:block;
+}
+#header 
+{
+    height: 90px;
+    padding: 25px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+    z-index: 997;
+    background-color: transparent;
+}
+ .active-header {
+    background-color: #1e1a1b !important;
+  }
+  .navbar-brand
+  {
+    font-family: 'Sofia', cursive;
+    color:white !important;
+  }
+.nav-menu , .nav-menu * 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu > li {
+    margin-left: 8px;
+}
+.nav-menu > li {
+    float: left;
+}
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+.nav-menu a {
+    padding: 7px;
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color:white !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover ,.navbar-light .navbar-nav .nav-link:active{
+    border-bottom: 3px solid #ffca1d;
+}
+/* intro section */
+#intro 
+{
+    width: 100%;
+    background: url('../images/office-space.jpg' ) top center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    min-height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed ;
+}
+ /* section#intro::before {
+    background: #000;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    opacity: .3;
+} */
+.intro-container 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5rem 0 0 0;
+}
+.intro-container h1 
+{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.main-button 
+{
+    margin:5em 0;
+}
+.main-button button 
+{
+    padding: 0.5rem 1.5rem;
+    width:200px;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    background-color: #ffca1d;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    cursor:pointer;
+}
+#about 
+{
+    position: relative;
+    background-color: #1e1a1b;   
+    overflow: hidden;
+    color: #fff;
+    width:100%;
+}
+.about-us-section 
+{
+    padding: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%
+}
+.about-us-section h4 
+{
+    padding: 0 10px;
+    font-size: 80px;
+    color: #ffca1d;
+    margin-bottom: 0;
+    display: inline-block;
+    word-spacing: 0.2em;
+    border-left: 5px solid #ffca1d;
+}
+.about-us-section h4 > i ,
+.services-heading h4 > i ,
+.contact-heading h4 > i
+{
+    font-family: 'Unica One', cursive;
+}
+.about-us-section h4 > b , 
+.services-heading h4 > b , 
+.contact-heading h4 > b
+{
+    font-family: 'Unica One', cursive;
+    color:#ffffff;
+    font-weight: 800;
+}
+.services-heading h4 > b ,
+.contact-heading h4 > b 
+{
+  color: #1e1a1b !important;
+}
+.about-us-section p 
+{
+    max-width: 60%;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin:10px 0;
+    padding:1.5rem 0;
+}
+
+.about-us-img-div img 
+{
+    max-width:100%;
+    /* max-height: 100vh; */
+    object-fit: contain;
+}
+
+/* services section */
+#services 
+{
+    padding:52px 30px;
+}
+.services-heading ,
+.contact-heading
+{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0 2rem 0;
+}
+.services-heading h4 , 
+.contact-heading h4 
+ {
+    font-size: 80px;
+    color: #ffca1d;
+    margin-bottom: 0;
+    word-spacing: 0.2em;
+    border-bottom: 5px solid #ffca1d;
+    text-align: center;
+    text-transform: uppercase;
+ }
+.card 
+{
+    border: 1px solid #fafafa !important;
+    background-color: #fafafa !important;
+    position: relative;
+}
+.card:hover , 
+.card:hover .card-type
+{
+    border:1px solid #ffca1d !important;
+}
+.card-type-container
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-type 
+{
+    position: absolute;
+    width:70px;
+    height:70px;
+    border:1px solid gray;
+    border-radius: 25px;
+    top:-35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-type i 
+{
+   font-size:45px;
+   color:#ffca1d;
+}
+/* contact us section css */
+#contact
+{
+    padding:40px;
+    background-color: transparent;
+}
+
+.contact-us-image
+{
+    max-width:100%;
+}
+
+.contact-container
+{
+    max-width:100%;
+    background-color: #1e1a1b;
+    opacity: 1;
+    height:440px;
+    padding:25px 40px 10px 40px;
+}
+.contact-container p 
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color:white;
+    text-align: justify;
+    padding: 0 20px;
+  
+}
+.form-container 
+{
+    padding: 20px 20px;
+    margin-top:10%;
+}
+.form-contact 
+{
+    border: 1px solid #1e1a1b;
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin-bottom:10px;
+}
+.form-contact label
+{
+    width:20%;
+    background-color: #ffca1d;
+    color:white;
+    padding:8px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.form-contact input 
+{
+    width: 80%;
+    padding: 8px 5px;
+    border: none;
+    outline: none;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.btn-send 
+{
+    display: flex;
+    justify-content: flex-end;
+    padding:20px 10px 0 0 ;
+}
+.btn-send button 
+{
+    border:none;
+    outline:none;
+    background-color: #ffca1d;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding:0.5rem 1.5rem;
+}
+
+/* Footer css */
+#footer 
+{
+    background-color: #1e1a1b;
+    width:100%;
+    padding:25px 0;
+}
+
+#footer p 
+{
+    color:white;
+}
+.social-media-part 
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social-media-part .icon-div 
+{
+    width:40px;
+    height:40px;
+    background-color: #fafafa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 0 0 20px;
+}
+
+.social-media-part .icon-div:hover
+{
+    background-color: #ffca1d;
+    
+}
+.social-media-part .icon-div:hover .icon-div a i 
+{
+    color:white;
+}
+.icon-div a:hover i
+{
+    color:white !important;
+}
+.icon-div a i 
+{
+    font-size:24px;
+    color:black;
+}
+
+@media(max-width:768px)
+{
+    #header , .navbar 
+    {
+        background-color: #1e1a1b;
+    }
+    .navbar-light .navbar-toggler
+    {
+        background-color: white;
+    }
+    .about-us-img-div 
+    {
+        display: none;
+    }
+    .about-us-section p
+    {
+        max-width:100%;
+    }
+    .card 
+    {
+        margin-top:10%;
+    }
+    #footer p 
+    {
+        text-align: center;
+    }
+    .social-media-part 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+}
+@media(max-width:414px)
+{
+    .intro-container h1 
+    {
+        font-size:22px;
+    }
+    
+    .contact-container {
+        padding: 25px 25px 10px 25px;
+    }
+    .services-heading h4, .contact-heading h4 , .about-us-section h4
+    {
+        font-size:60px;
+    }
+    .about-us-section
+    {
+        padding:30px;
+    }
+}
+@media(max-width:375px)
+{
+    .contact-container p
+    {
+        padding:0 0;
+    }
+    .form-contact label
+    {
+        width:25%;
+    }
+}
